@@ -27,6 +27,7 @@ public class Main_Test {
     @Test
     public void test01_registration(){
         RegistrationPage register = new RegistrationPage();
+        ReportsSingleton.logInfo("Registration test Starting...");
         register.register();
         ReportsSingleton.logPass("Registration passed successfully");
     }
@@ -34,6 +35,7 @@ public class Main_Test {
     @Test
     public void test02_searchAGift() throws Exception {
         HomePage home = new HomePage();
+        ReportsSingleton.logInfo("Searching a gift test Starting...");
         home.findAGift();
         ReportsSingleton.logPass("Searching a gift passed successfully");
     }
@@ -41,6 +43,7 @@ public class Main_Test {
     @Test
     public void test03_pickBusiness() {
         PickBusinessPage pickBusiness = new PickBusinessPage();
+        ReportsSingleton.logInfo("Picking a business test Starting...");
         pickBusiness.pickBusiness();
         ReportsSingleton.logPass("Picking a business passed successfully");
     }
@@ -48,6 +51,7 @@ public class Main_Test {
     @Test
     public void test04_senderAndReceiver() throws Exception {
         SenderAndReceiverInfoPage senderAndReceiver = new SenderAndReceiverInfoPage();
+        ReportsSingleton.logInfo("Sender and Receiver Info test Starting...");
         senderAndReceiver.insertSenderAndReceiverInfo();
         ReportsSingleton.logPass("Sender and Receiver Info test passed successfully");
         ReportsSingleton.logInfo("BuyMe Sanity Test Passed Successfully!!!");
